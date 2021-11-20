@@ -1,0 +1,61 @@
+.header { 
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    color:white;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+.name {
+    font-size: 32px;
+    grid-area: h;
+}
+
+.link1 {
+    grid-area: l1;    
+}
+
+.link2 {
+    grid-area: l2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: 
+        ". . . h h h . l1 l2 ";
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "h h h"
+            "l1 . l2";
+    }
+
+    .header {
+        height: fit-content;
+        position: static;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 780px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "h h h . l1 l2 ";
+    }
+}
