@@ -110,8 +110,7 @@ main {
 }
 
 .cardImage {
-    width: 100%;
-    height: 200px;
+    aspect-ratio: 300/250;
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -156,6 +155,19 @@ main {
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+.cardButton a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardButton .notAllowed {
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: gray;
+}
+
+.cardButton .notAllowed:hover {
+    box-shadow: none;
+}
 
 @media only screen and (max-width: 700px){
     .container {
@@ -171,6 +183,10 @@ main {
     width: 80%;
     margin-top: 100px;
     height: 360px;
+    }
+    .cardImage {
+    width: 100%;
+    height: 200px;
     }
 }
 
