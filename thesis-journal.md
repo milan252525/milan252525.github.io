@@ -14,21 +14,21 @@ thesis is being written in LaTeX.
 
 ## Current progress
 ### Implementation
-- [x] website design (HTML, CSS)
-- [X] service search, recommendations   
-- [ ] user service saving
-- [ ] communication form generation
-- [ ] dockerize
+* [x] website design (HTML, CSS)
+* [x] service search, recommendations   
+* [ ] user service saving
+* [ ] communication form generation
+* [ ] dockerize
 
 ### Thesis
-- [ ] intro (75%)
-- [ ] intro to open data (50%)
-- [ ] requirements analysis
-- [ ] development documentation
-- [ ] installation manual
-- [ ] testing
-- [ ] data improvement suggestion
-- [ ] outro
+* [ ] intro (75%)
+* [ ] intro to open data (50%)
+* [ ] requirements analysis
+* [ ] development documentation
+* [ ] installation manual
+* [ ] testing
+* [ ] data improvement suggestion
+* [ ] outro
 
 
 ## DAY 1
