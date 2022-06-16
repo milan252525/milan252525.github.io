@@ -1,3 +1,9 @@
+<style>
+ul {
+  list-style-type: none;
+}
+</style>
+
 # Finishing thesis in 30 days
 
 My bachelor thesis is due in 30 days. As it is not much time to finish it, I figured
@@ -14,21 +20,25 @@ thesis is being written in LaTeX.
 
 ## Current progress
 ### Implementation
-* [x] website design (HTML, CSS)
-* [x] service search, recommendations   
-* [ ] user service saving
-* [ ] communication form generation
-* [ ] dockerize
+<ul>
+    <li><input type="checkbox" disabled checked> website design (HTML, CSS) </li>
+    <li><input type="checkbox" disabled checked> service search, recommendations </li>
+    <li><input type="checkbox" disabled> user service saving </li>
+    <li><input type="checkbox" disabled> communication form generation </li>
+    <li><input type="checkbox" disabled> dockerize </li>
+</ul>
 
 ### Thesis
-* [ ] intro (75%)
-* [ ] intro to open data (50%)
-* [ ] requirements analysis
-* [ ] development documentation
-* [ ] installation manual
-* [ ] testing
-* [ ] data improvement suggestion
-* [ ] outro
+<ul>
+    <li><input type="checkbox" disabled > intro (75%) </li>
+    <li><input type="checkbox" disabled > intro to open data (50%) </li>
+    <li><input type="checkbox" disabled > requirements analysis </li>
+    <li><input type="checkbox" disabled > development documentation </li>
+    <li><input type="checkbox" disabled > installation manual </li>
+    <li><input type="checkbox" disabled > testing </li>
+    <li><input type="checkbox" disabled > data improvement suggestion </li>
+    <li><input type="checkbox" disabled > outro </li>
+</ul>
 
 
 ## DAY 1
