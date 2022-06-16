@@ -4,7 +4,7 @@ ul {
 }
 </style>
 
-# Finishing thesis in 30 days
+# FINISHING THESIS IN 30 DAYS
 
 My bachelor thesis is due in 30 days. As it is not much time to finish it, I figured
 making a journal about it might help me boost my productivity.
