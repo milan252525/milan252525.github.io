@@ -1,9 +1,3 @@
-<style>
-ul {
-  list-style-type: none;
-}
-</style>
-
 # FINISHING THESIS IN 30 DAYS
 
 My bachelor thesis is due in 30 days. As it is not much time to finish it, I figured
