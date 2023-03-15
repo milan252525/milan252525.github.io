@@ -109,11 +109,16 @@ span {
 }
 
 #Bio .section {
+    margin-bottom: 0.5em;
+}
+
+#Bio .entry {
     font-size: 22px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
-#Bio .subsection {
+#Bio .subentry {
     font-size: 18px;
     margin-top: 0.6em;
     margin-bottom: 0;
