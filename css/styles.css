@@ -1,6 +1,9 @@
 /* --- Fonts Importing --- */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Quicksand:wght@300&family=Rufina&display=swap');
 
+/* ---- TODO ---- */
+/* ---- Fix cards responsiveness and flex properties 
+ScrollMagic---- */
 
 /* ---- Color Pallete ---- */
 
@@ -15,6 +18,16 @@
     --Concrete: #95A5A6;
 }
 
+@keyframes title-anim {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+    
+}
 /* ---- General Rules ---- */
 html {
   scroll-behavior: smooth;
@@ -34,22 +47,42 @@ body {
 h1 {
     font-size: 60px;
     font-family: 'Lato', sans-serif;
-    margin-top: 1em;
-    margin-left: 1em;
     margin-bottom: 0em;
 }
 
 h2 {
-    border-bottom: 5px dotted var(--blue);
-    font-family: 'Lato', Sans-Serif;
-    font-size: 2.5em;
-    color: var(--MNBlue);
+    border-bottom: 5px dotted var(--MNBlue);
 }
 
+.sectionTitle {
+    font-family: 'Lato', Sans-Serif;
+    font-size: 2.5em;
+    background: linear-gradient(
+        to right,
+        var(--blue),
+        var(--green),
+        var(--blue)
+    );
+    animation: title-anim 1s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+}
+
+.sectionTitle::selection {
+    -webkit-text-fill-color: black;
+}
+
+.sectionTitle:hover {
+    animation-play-state: paused;
+
+}
 p {
     font-size: 27px;
     color: var(--WetAsphalt);
     font-family: 'Lato', Sans-Serif;
+    line-height: 0.9;
 }
 
 span {
@@ -70,7 +103,8 @@ span {
 
 #Bio {
     position: relative;
-    min-height: 50vh;
+    min-height: 66vh;
+    margin-top: 1em;
 }
 
 section {
@@ -97,7 +131,7 @@ main {
 }
 
 .card {
-    background-color: var(--white);
+    background-color: #dfdfdf;
     border-radius: 10px;
     width: 30%;
     margin-top: 25px;
@@ -169,27 +203,6 @@ main {
     box-shadow: none;
 }
 
-@media only screen and (max-width: 700px){
-    .container {
-        padding: 0em 2em 0em 2em;
-    }
-    .cardContainer {
-    display: flex;
-    flex-direction: column;
-	align-self: center;
-    align-items: center;
-    }
-    .card {
-    width: 80%;
-    margin-top: 100px;
-    height: 360px;
-    }
-    .cardImage {
-    width: 100%;
-    height: 200px;
-    }
-}
-
 /* ---- Socials ---- */
 
 .Socials {
@@ -249,7 +262,7 @@ span a {
 .menu__link:hover {
     background: var(--silver);
     color: var(--MNBlue);
-    transition: ease 0.3s all;
+    transition: ease 0.4s all;
 }
 
 /* Footer Styles */
@@ -260,4 +273,31 @@ span a {
 
 .page__footer span{
     color: var(--white);
+}
+
+@media only screen and (max-width: 700px){
+    .navbarContainer {
+        justify-content: space-evenly;
+    }
+    .menu__link {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .container {
+        padding: 0em 2em 0em 2em;
+    }
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+	    align-self: center;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        margin-top: 100px;
+        height: 360px;
+    }
+    h2 {
+        margin-top: 50px;
+    }
 }
