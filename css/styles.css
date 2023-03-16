@@ -7,7 +7,6 @@ ScrollMagic---- */
 
 /* ---- Color Pallete ---- */
 
-
 :root {
 	--white: #ECF0F1;
 	--silver: #BDC3C7; 
@@ -17,6 +16,7 @@ ScrollMagic---- */
     --blue: #3498DB;
     --Concrete: #95A5A6;
 }
+/* ---- General Rules ---- */
 
 @keyframes title-anim {
     from {
@@ -28,7 +28,7 @@ ScrollMagic---- */
     }
     
 }
-/* ---- General Rules ---- */
+
 html {
   scroll-behavior: smooth;
 }
